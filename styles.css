@@ -1,1 +1,14 @@
-/* Пиши стили тут */
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.star img {
+    width: 25px;
+    cursor: pointer;
+}
+
+.star:hover img,
+.star:hover ~ .star img {
+    background-image: url(./img/star.svg);
+}
